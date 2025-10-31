@@ -157,12 +157,13 @@ with col_result:
         colB.metric("Volumen (ml)", resultados["Volumen total (ml)"])
         colC.metric("Ampollas", resultados["Ampollas necesarias"])
 
-        st.caption("💡 Reaperturas por esterilidad:")
-        st.info(f"{resultados['Reaperturas por esterilidad']} veces")
+       #st.caption("💡 Reaperturas por esterilidad:")
+        #st.info(f"{resultados['Reaperturas por esterilidad']} veces")
 
         st.caption("📆 Distribución mensual:")
         st.info(f"**Este mes:** {resultados['Ampollas este mes']} ampollas ({resultados['Volumen este mes (ml)']} ml)")
         st.info(f"**Próximo mes:** {resultados['Ampollas próximo mes']} ampollas ({resultados['Volumen próximo mes (ml)']} ml)")
+
 
 
 
