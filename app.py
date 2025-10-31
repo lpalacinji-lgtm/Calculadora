@@ -123,7 +123,7 @@ with col_form:
 
     else:
         dosis_inyeccion = st.number_input("Dosis por inyección (ml):", min_value=0.1, step=0.1, value=1.0)
-        volumen_ampolla = st.number_input("Volumen por ampolla (ml):", min_value=0.5, step=0.5, value=2.0)
+        volumen_ampolla = st.number_input("Volumen por ampolla (ml):", min_value=0.5, step=0.5, value=1.0)
         esterilidad_horas = st.number_input("Esterilidad (horas):", min_value=6, step=6, value=24)
         calcular = st.button("🧮 Calcular Ampollas", use_container_width=True)
 
@@ -163,6 +163,7 @@ with col_result:
         st.caption("📆 Distribución mensual:")
         st.info(f"**Este mes:** {resultados['Ampollas este mes']} ampollas ({resultados['Volumen este mes (ml)']} ml)")
         st.info(f"**Próximo mes:** {resultados['Ampollas próximo mes']} ampollas ({resultados['Volumen próximo mes (ml)']} ml)")
+
 
 
 
