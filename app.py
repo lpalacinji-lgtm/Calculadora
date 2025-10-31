@@ -8,7 +8,7 @@ from calculator import calcular_tabletas, calcular_ampollas
 # CONFIGURACIÓN GENERAL
 # ======================================
 st.set_page_config(
-    page_title="Calculadora de Medicamentos 💊",
+    page_title="Calculadora de Medicamentos. 💊",
     layout="wide",
     page_icon="💉"
 )
@@ -161,4 +161,5 @@ with col_result:
         st.caption("📆 Distribución mensual:")
         st.info(f"**Este mes:** {resultados['Ampollas este mes']} ampollas ({resultados['Volumen este mes (ml)']} ml)")
         st.info(f"**Próximo mes:** {resultados['Ampollas próximo mes']} ampollas ({resultados['Volumen próximo mes (ml)']} ml)")
+
 
