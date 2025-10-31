@@ -96,7 +96,7 @@ st.markdown("""
 # TITULO Y LAYOUT
 # ======================================
 st.title("💊 Calculadora de Dispensación Médica")
-st.caption("Sistema Profesional — Optimizado para Farmacias y Áreas Clínicas")
+
 
 col_form, col_result = st.columns([1.1, 1])
 
@@ -161,3 +161,4 @@ with col_result:
         st.caption("📆 Distribución mensual:")
         st.info(f"**Este mes:** {resultados['Ampollas este mes']} ampollas ({resultados['Volumen este mes (ml)']} ml)")
         st.info(f"**Próximo mes:** {resultados['Ampollas próximo mes']} ampollas ({resultados['Volumen próximo mes (ml)']} ml)")
+
