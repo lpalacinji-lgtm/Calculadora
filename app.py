@@ -111,7 +111,7 @@ with col_form:
     duracion = st.number_input("Duración (días):", min_value=1, max_value=120, value=5)
     fecha_orden = st.date_input("Fecha de orden:", datetime.today())
     inicio_mismo_dia = st.checkbox("Inicia el mismo día", value=True)
-    st.caption("Si no marcha Check , inicia el otro dia ")
+    st.caption("Si no marcha Check , inicia el el dia siguiente ")
 
     st.divider()
 
@@ -162,6 +162,7 @@ with col_result:
         st.caption("📆 Distribución mensual:")
         st.info(f"**Este mes:** {resultados['Ampollas este mes']} ampollas ({resultados['Volumen este mes (ml)']} ml)")
         st.info(f"**Próximo mes:** {resultados['Ampollas próximo mes']} ampollas ({resultados['Volumen próximo mes (ml)']} ml)")
+
 
 
 
